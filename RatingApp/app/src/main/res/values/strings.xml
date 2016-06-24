@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">RatingApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="state1">Andhra Pradesh </string>
+    <string name="state2">Telangana</string>
+    <string name="state3">Karanataka</string>
+    <string name="title_activity_activity_business_details">Details</string>
+    <string name="title_activity_activity_business_list">Matching Businesses</string>
+    <string name="title_activity_test">test</string>
+    <string name="title_activity_capture_user_inputs">Rate On</string>
+    <string name="title_activity_activity_states_list">Select a State</string>
+    <string name="title_activity_activity_city_list">Select a City</string>
+    <string name="title_activity_business_category">Select a Business Category</string>
+    <string name="title_activity_activity_area_list">Select an Area</string>
+    <string name="title_activity_act_rate_on_custom_window_title">ActRateOnCustomWindowTitle</string>
+    <string name="title_activity_popup_activity_review_edit_comments">Enter your Review comments</string>
+    <string name="capture_input_select_city">Select a City</string>
+    <string name="capture_input_select_area">Select an Area</string>
+    <string name="coupon_prompt"><b><u>Need a coupon?</u></b></string>
+    <string name="title_activity_act_all_reviews">All Reviews</string>
+    <string name="title_activity_act_areview_comment_in_detail">View Comment</string>
+
+
+    <string name="mText">Movieez</string>
+
+    <string-array name="spinner_item">
+        <item>Select Language</item>
+        <item>Telugu</item>
+        <item>Hindi</item>
+        <item>English</item>
+    </string-array>
+
+    <string name="title_activity_movie_lang_select">Select a Language</string>
+    <string name="title_activity_movie_list_item">Movie List Item</string>
+    <string name="title_activity_movie_list">Movies List</string>
+    <string name="title_activity_movie_category">Movie Category</string>
+    <string name="title_activity_movie_details">Movie Details</string>
+    <string name="title_activity_all_reviews_of_movies">All Reviews Of Movies</string>
+    <string name="title_activity_amovie_review_comment_in_detail">Movie Review In Detail</string>
+
+
+</resources>

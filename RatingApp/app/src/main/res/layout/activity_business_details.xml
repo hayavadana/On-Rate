@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.kh499.ratingapp.ActivityBusinessDetails">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:textStyle="bold"
+            android:id="@+id/TextViewBusinessTitle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBarBusinessRating"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:layout_marginLeft="0dp"
+                android:progressDrawable="@drawable/ratingbarstars"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                android:isIndicator="true"
+                android:clickable="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="false"
+        android:layout_below="@+id/linearLayout2"
+        android:id="@+id/linearLayout3">
+
+        <WebView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webViewBusinessDesc"
+            android:nestedScrollingEnabled="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Your Rating:"
+            android:id="@+id/textView5"
+            android:layout_marginLeft="0dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_below="@+id/textView5"
+            android:layout_gravity="center_horizontal">
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.75"
+                android:scaleY="0.75"
+                android:id="@+id/ratingBarUserRating"
+                android:stepSize="0.5"
+                android:numStars="5"
+                android:outlineProvider="background"
+                android:rating="1"
+                android:clickable="true"
+
+                android:progressDrawable="@drawable/ratingbarstars"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imgWriteComments"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="-35dp"
+                android:src="@drawable/revcomm" />
+
+
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="0dp"
+                android:id="@+id/imgListRevComments"
+                android:src="@drawable/listreviewsicon" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Submit Rating"
+                android:textAllCaps="false"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:id="@+id/buttonSubmitRating"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:text="@string/coupon_prompt"
+                android:textAllCaps="false"
+                android:textSize="12dp"
+                android:textStyle="italic|bold"
+                android:background="@android:color/transparent"
+                android:textColor="#0000ff"
+                android:id="@+id/btnEmail" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

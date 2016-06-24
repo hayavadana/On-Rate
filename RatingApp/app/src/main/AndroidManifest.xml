@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hayavadana.ratingapp">
+        
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.hayavadana.ratingapp.ActivityBusinessDetails"
+            android:label="@string/title_activity_activity_business_details"
+            android:parentActivityName="com.hayavadana.ratingapp.ActivityBusinessList">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hayavadana.ratingapp.ActivityBusinessList" />
+        </activity>
+        <activity
+            android:name="com.hayavadana.ratingapp.ActivityBusinessList"
+            android:label="@string/title_activity_activity_business_list"
+            android:parentActivityName="com.hayavadana.ratingapp.CaptureUserInputs">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hayavadana.ratingapp.CaptureUserInputs" />
+        </activity>
+        <activity
+            android:name="com.hayavadana.ratingapp.CaptureUserInputs"
+            android:theme="@style/MyTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hayavadana.ratingapp.ActivityStatesList"
+            android:label="@string/title_activity_activity_states_list"
+            android:parentActivityName="com.hayavadana.ratingapp.CaptureUserInputs">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hayavadana.ratingapp.CaptureUserInputs" />
+        </activity>
+        <activity
+            android:name="com.hayavadana.ratingapp.ActivityCityList"
+            android:label="@string/title_activity_activity_city_list"
+            android:parentActivityName="com.hayavadana.ratingapp.CaptureUserInputs">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hayavadana.ratingapp.CaptureUserInputs" />
+        </activity>
+        <activity
+            android:name="com.hayavadana.ratingapp.BusinessCategoryAct"
+            android:label="@string/title_activity_business_category"
+            android:parentActivityName="com.hayavadana.ratingapp.CaptureUserInputs">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hayavadana.ratingapp.CaptureUserInputs" />
+        </activity>
+        <activity
+            android:name="com.hayavadana.ratingapp.ActivityAreaList"
+            android:label="@string/title_activity_activity_area_list"
+            android:parentActivityName="com.hayavadana.ratingapp.CaptureUserInputs">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hayavadana.ratingapp.CaptureUserInputs" />
+        </activity>
+        <activity
+            android:name="com.hayavadana.ratingapp.ActRateOnCustomWindowTitle"
+            android:label="@string/title_activity_act_rate_on_custom_window_title" />
+        <activity
+            android:name="com.hayavadana.ratingapp.ActivityPopupReviewEditComments"
+            android:label="@string/title_activity_popup_activity_review_edit_comments"
+            android:theme="@android:style/Theme.Dialog">
+
+
+        </activity>
+        <activity
+            android:name="com.hayavadana.ratingapp.ActAllReviews"
+            android:label="@string/title_activity_act_all_reviews"
+            android:parentActivityName="com.hayavadana.ratingapp.ActivityBusinessDetails">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hayavadana.ratingapp.ActivityBusinessDetails" />
+        </activity>
+        <activity
+            android:name="com.hayavadana.ratingapp.ActAReviewCommentInDetail"
+            android:label="@string/title_activity_act_areview_comment_in_detail"
+            android:parentActivityName="com.hayavadana.ratingapp.ActAllReviews">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hayavadana.ratingapp.ActAllReviews" />
+        </activity>
+        <activity
+            android:name="com.hayavadana.ratingapp.MovieLangSelect"
+            android:label="@string/title_activity_movie_lang_select"
+            android:parentActivityName="com.hayavadana.ratingapp.MovieLangSelect">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hayavadana.ratingapp.MovieLangSelect" />
+        </activity>
+        <activity
+            android:name="com.hayavadana.ratingapp.ActivityMovieList"
+            android:label="@string/title_activity_movie_list"
+            android:parentActivityName="com.hayavadana.ratingapp.ActivityMovieList"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hayavadana.ratingapp.ActivityMovieList" />
+        </activity>
+        <activity
+            android:name="com.hayavadana.ratingapp.ActivityMovieCategory"
+            android:label="@string/title_activity_movie_category"
+            android:parentActivityName="com.hayavadana.ratingapp.ActivityMovieList"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hayavadana.ratingapp.ActivityMovieCategory" />
+        </activity>
+        <activity
+            android:name="com.hayavadana.ratingapp.ActivityMovieDetails"
+            android:label="@string/title_activity_movie_details"
+            android:parentActivityName="com.hayavadana.ratingapp.ActivityMovieList">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hayavadana.ratingapp.ActivityMovieDetails" />
+        </activity>
+        <activity
+            android:name="com.hayavadana.ratingapp.ActivityAllReviewsOfMovies"
+            android:label="@string/title_activity_all_reviews_of_movies"
+            android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.hayavadana.ratingapp.ActivityAllReviewsOfMovies" />
+        </activity>
+
+        <activity
+            android:name="com.hayavadana.ratingapp.ActivityAMovieReviewCommentInDetail"
+            android:label="@string/title_activity_amovie_review_comment_in_detail"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hayavadana.ratingapp.ActivityAMovieReviewCommentInDetail" />
+
+        </activity>
+    </application>
+
+</manifest>
